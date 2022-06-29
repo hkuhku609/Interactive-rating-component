@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #000;
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+}
+
+.attribution {
+  margin-top: 100px;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(25deg, 97%, 53%);
+}
+
+.circle-text {
+  margin: 15px 0;
+  width: 40px;
+  height: 40px;
+  background-color: hsl(213deg, 19%, 18%);
+  border-radius: 100%;
+  line-height: 42px;
+  text-align: center;
+  color: hsl(217deg, 12%, 63%);
+  font-size: small;
+}
+.circle-text:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+
+.selected {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(216deg, 12%, 54%);
+}
+
+.circle-img {
+  margin: 15px 0;
+  width: 40px;
+  height: 40px;
+  background-color: hsl(213deg, 19%, 18%);
+  border-radius: 100%;
+  line-height: 42px;
+  text-align: center;
+  color: hsl(217deg, 12%, 63%);
+  font-size: small;
+  line-height: 45px;
+  display: block;
+}
+.circle-img img {
+  width: 15px;
+  height: auto;
+}
+
+.container {
+  border-radius: 25px;
+  padding: 20px;
+  background-color: hsl(216deg, 12%, 8%);
+  width: 340px;
+}
+.container h2 {
+  margin: 15px 0;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+}
+.container p {
+  line-height: 20px;
+  margin: 15px 0;
+  font-size: small;
+  color: hsl(217deg, 12%, 63%);
+  font-weight: 400;
+}
+.container .circle-group {
+  display: flex;
+  justify-content: space-between;
+}
+.container .btn {
+  margin: 15px auto;
+  padding: 20px;
+  height: 30px;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 97%, 53%);
+  border-radius: 25px;
+  line-height: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: small;
+}
+.container .btn:hover {
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+
+.container2 {
+  display: none;
+  border-radius: 25px;
+  padding: 20px;
+  background-color: hsl(216deg, 12%, 8%);
+  width: 340px;
+  text-align: center;
+}
+.container2 h2 {
+  margin: 15px 0;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+}
+.container2 p {
+  line-height: 20px;
+  margin: 15px 0;
+  font-size: small;
+  color: hsl(217deg, 12%, 63%);
+  font-weight: 400;
+}
+.container2 img {
+  width: 100px;
+  height: auto;
+}
+.container2 .scorce {
+  width: 150px;
+  padding: 3px;
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(213deg, 19%, 18%);
+  border-radius: 25px;
+  line-height: 20px;
+  margin: 15px auto;
+  font-size: small;
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */

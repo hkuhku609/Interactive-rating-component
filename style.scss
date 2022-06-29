@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+$Orange: hsl(25, 97%, 53%);
+$White: hsl(0, 0%, 100%);
+$LightGrey: hsl(217, 12%, 63%);
+$MediumGrey: hsl(216, 12%, 54%);
+$DarkBlue: hsl(213, 19%, 18%);
+$VeryDarkBlue: hsl(216, 12%, 8%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #000;
+  font-size: 15px;
+  font-family: 'Overpass', sans-serif;
+}
+.attribution {
+  margin-top: 100px;
+  color: $White;
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: $Orange;
+  }
+}
+@mixin circle {
+  margin: 15px 0;
+  width: 40px;
+  height: 40px;
+  background-color: $DarkBlue;
+  border-radius: 100%;
+  line-height: 42px;
+  text-align: center;
+  color: $LightGrey;
+  font-size: small;
+}
+
+@mixin container_p_h2 {
+  border-radius: 25px;
+  padding: 20px;
+  background-color: $VeryDarkBlue;
+  width: 340px;
+  h2 {
+    margin: 15px 0;
+    color: $White;
+    font-weight: 700;
+  }
+  p {
+    line-height: 20px;
+    margin: 15px 0;
+    font-size: small;
+    color: $LightGrey;
+    font-weight: 400;
+  }
+}
+
+.circle-text {
+  @include circle;
+  &:hover {
+    background-color: $Orange;
+    color: $White;
+    cursor: pointer;
+  }
+}
+
+.selected {
+  color: $White;
+  background-color: $MediumGrey;
+}
+
+.circle-img {
+  @include circle;
+  line-height: 45px;
+  display: block;
+
+  img {
+    width: 15px;
+    height: auto;
+  }
+}
+.container {
+  @include container_p_h2;
+  .circle-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn {
+    margin: 15px auto;
+    padding: 20px;
+    height: 30px;
+    color: $White;
+    background-color: $Orange;
+    border-radius: 25px;
+    line-height: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: small;
+    &:hover {
+      color: $Orange;
+      background-color: $White;
+      cursor: pointer;
+    }
+  }
+}
+.container2 {
+  display: none;
+  @include container_p_h2;
+  text-align: center;
+
+  img {
+    width: 100px;
+    height: auto;
+  }
+  .scorce {
+    width: 150px;
+    padding: 3px;
+    color: $Orange;
+    background-color: $DarkBlue;
+    border-radius: 25px;
+    line-height: 20px;
+    margin: 15px auto;
+    font-size: small;
+    font-weight: 400;
+  }
+}
